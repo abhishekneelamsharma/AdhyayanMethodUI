@@ -20,7 +20,7 @@ export default function Signup() {
         e.preventDefault();
 
         const {name,email,phone,password,cpassword} = signupData;
-        const res = await fetch("am-api-production.up.railway.app/signup",{
+        const res = await fetch("https://adhayayanmethodapi-production.up.railway.app/signup",{
             method:"POST",
             credentials: 'include',
             headers:{

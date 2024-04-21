@@ -8,7 +8,7 @@ export default function Logout() {
     const navigate = useNavigate();
     const implementLogout = async () => {
         try {
-            const res = await fetch("am-api-production.up.railway.app/logout", {
+            const res = await fetch("https://adhayayanmethodapi-production.up.railway.app/logout", {
                 method: "GET",
                 headers: {
                     "Content-Type": "application/json"

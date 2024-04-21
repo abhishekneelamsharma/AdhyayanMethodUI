@@ -23,7 +23,7 @@ export default function Login() {
 
             const { email, password } = loginData;
 
-            const res = await fetch("https://am-api-production.up.railway.app/login", {
+            const res = await fetch("https://adhayayanmethodapi-production.up.railway.app/login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

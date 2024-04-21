@@ -17,7 +17,7 @@ function Contact() {
         try {
             e.preventDefault();
             const { name, email, message } = contactData;
-            const res = await fetch("am-api-production.up.railway.app/contact", {
+            const res = await fetch("https://adhayayanmethodapi-production.up.railway.app/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -45,7 +45,7 @@ function Contact() {
     useEffect(() => {
         const callContactPage = async () => {
             try {
-                const res = await fetch("am-api-production.up.railway.app/contact", {
+                const res = await fetch("https://adhayayanmethodapi-production.up.railway.app/contact", {
                     method: "GET",
                     headers: {
                         Accept: "application/json",
