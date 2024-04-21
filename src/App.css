@@ -1,0 +1,394 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mainDark-color: #293a1d;
+    --mainLight-color: #E3F7D3;
+    --headingDark-color: #293a1d;
+    --headingLight-color: #E3F7D3;
+    --paraDark-color: #293a1d;
+    --paraLight-color: #E3F7D3;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 40px;
+    font-weight: 900;
+    color: var(--headingDark-color);
+}
+
+h2,
+h3,
+h4 {
+    font-weight: 900;
+    color: var(--headingDark-color);
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 40px;
+}
+
+h5 {
+    font-size: 1rem;
+    color: var(--headingDark-color);
+    letter-spacing: 4px;
+    font-weight: 900;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--paraDark-color);
+    line-height: 1.3rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/*=====================
+    utility classes
+====================== */
+.bg-color {
+    background-color: var(--mainDark-color);
+}
+
+/*=====================
+    Navigation Bar
+====================== */
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: var(--mainLight-color)
+}
+
+.navbar-toggler {
+    background-color: var(--mainLight-color);
+    color: transparent;
+}
+
+.logo {
+    height: 2rem;
+}
+
+.login {
+    background-color: var(--mainLight-color);
+    color: var(--mainDark-color);
+}
+
+/*=====================
+    HERO-SECTION
+====================== */
+.hero-section {
+
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section img {
+    height: auto;
+    width: 70%;
+}
+
+.hero-section .btn-success {
+    background-color: var(--mainDark-color);
+}
+
+.hero-section .btn-success:hover {
+    background-color: var(--mainLight-color);
+    color: var(--mainDark-color);
+}
+
+/*=====================
+    ABOUT-SECTION
+====================== */
+.about-section {
+    position: relative;
+    padding-top: 7rem;
+}
+
+.about-section h2,
+.about-section p {
+    color: var(--headingLight-color);
+
+}
+
+.about-section p {
+    max-width: 40rem;
+    margin: 2rem auto;
+}
+
+.about-section hr {
+    background-color: var(--headingLight-color);
+}
+
+.about-section .content {
+    margin-top: 4rem;
+}
+
+.custom-shape-divider-top-1702661490 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1702661490 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1702661490 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/*=====================
+    COACHING-SECTION
+====================== */
+.coachings-section {
+    position: relative;
+    min-height: 120vh;
+}
+
+.coachings-section h2,
+.coachings-section p {
+    color: var(--headingLight-color);
+}
+
+.coachings-section hr {
+    background-color: var(--headingLight-color);
+}
+
+.coachings-section .content {
+    background-color: var(--headingLight-color);
+    height: 3rem;
+    border-radius: 0.5rem;
+    padding-top: 0.7rem;
+}
+
+.coachings-section .content:hover {
+    cursor: pointer;
+    color: var(--paraLight-color);
+    border: 2px solid var(--headingLight-color);
+    background-color: var(--headingDark-color);
+}
+
+.custom-shape-divider-bottom-1702882568 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1702882568 svg {
+    position: relative;
+    display: block;
+    width: calc(105% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1702882568 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+/*=====================
+    CONTACT SECTION
+====================== */
+
+.contact-section .btn-success {
+    background-color: var(--headingDark-color);
+}
+
+.contact-section form {
+    max-width: 20rem;
+    color: var(--mainDark-color);
+    margin: auto;
+
+}
+
+.contact-section .details {
+    color: var(--mainDark-color);
+    max-width: 20rem;
+    padding-left: 0;
+}
+
+.contact-section .contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-section i {
+    color: var(--mainDark-color);
+    padding: 0 0.5rem;
+}
+
+/*=====================
+    FOOTER SECTION
+====================== */
+.footer-section {
+    color: var(--headingLight-color);
+    /* height: 50vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section p {
+    color: #9ab485;
+    margin-bottom: 0;
+}
+
+.footer-section p:hover {
+    cursor: pointer;
+    color: var(--headingLight-color);
+}
+
+.footer-section .social-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.social-profile i {
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: var(--mainLight-color);
+}
+
+.social-profile i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: all 0.5s
+}
+marquee p{
+    font-size: 0.7rem;
+}
+/*=====================
+    SIGN-UP SECTION
+====================== */
+.signup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainDark-color);
+}
+.signup-form .form-group {
+    margin: 1rem 0;
+}
+.signup-form .form-group input{
+    outline: none;
+    margin:0 1rem ;
+    width: 20rem;
+    border: none;
+    border-bottom: 1px solid var(--mainDark-color);
+    color: var(--headingDark-color);
+}
+.signup-form .btn-success{
+    background-color: var(--mainDark-color);
+}
+
+/*=====================
+        404 PAGE
+====================== */
+
+.error-page{
+    height: 100vh;
+}
+.error-page h2{
+    font-size: 10rem;
+    opacity: 0.3;
+    z-index: -1;
+    position: relative;
+}
+.error-page h3{
+    position: absolute;
+}
+.error-page .btn{
+   
+    background-color: var(--headingDark-color);
+}
+
+
+/* ===================================
+======================================
+======================================
+======================================
+        RESPONSIVE DESING 
+        RESPONSIVE DESING 
+        RESPONSIVE DESING 
+        RESPONSIVE DESING 
+======================================
+======================================
+======================================
+====================================== */
+
+@media screen and (max-width:1200px){
+    .hero-section{
+        min-height: 80vh;
+    }
+    h1 {
+        font-size: 2.7rem;
+    }
+    .hero-section img {
+        height: auto;
+        width: 100%;
+    }
+    p{
+        line-height:1.2rem ;
+    }
+    .footer-section {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .coachings-section{
+        min-height: 95vh;
+    }
+    .dn{
+        display: none;
+    }
+    .footer-section p{
+        margin-left: 2rem;
+        line-height: 1rem;
+    }
+}
+
+@media screen and (max-width:441px) {
+    .signup-form .form-group input{
+       width: 12rem;
+    }
+   
+}
